@@ -17,4 +17,10 @@ class Order extends Controller
       ]);
       return redirect('/');
     }
+
+    public function Keranjang()
+    {
+      $keranjang = DB::table('keranjang')->get();
+      return view('keranjang',['keranjang'=> $keranjang]);
+    }
 }
