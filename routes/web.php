@@ -18,3 +18,4 @@ Route::post('/Daftar','Login@Register');
 Route::post('/Masuk','Login@Masuk');
 Route::get('/Logout','Login@Logout');
 Route::post('/AddCart','Order@Order');
+Route::get('/keranjang','Order@keranjang');
